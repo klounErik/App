@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "http://klounErik.github.io/App",
+  "homepage": "http://klounErik.github.io",
   "scripts": {
     "start": "webpack-dev-server --hot --open",
     "build": "webpack --config webpack.config.js --mode production",

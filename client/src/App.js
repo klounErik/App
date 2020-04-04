@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { Button } from 'antd'
-import { User } from './components/User'
-import { UserModal } from './components/UserModal'
+// import { Button } from 'antd'
+// import { User } from './components/User'
+// import { UserModal } from './components/UserModal'
 import video from './assets/videos/video2.mp4'
 
 import './App.css'
