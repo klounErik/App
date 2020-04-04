@@ -62,3 +62,139 @@ body {
     flex-direction: column;
     text-align: center;
 }
+
+.app-nav {
+    position: absolute;
+    background-color: white;
+    height: 100px;
+    width: 100%;
+}
+
+.app-header {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    /* background-image: url('./assets/images/header3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    width: 100%;
+}
+
+
+.app-header-video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.section-one {
+    height: 100vh;
+}
+
+.link-container li{
+    list-style: none;
+}
+
+.link-container a {
+    font-size: 30px;
+    color: rgb(58, 55, 55);
+}
+
+ul {
+    list-style: none;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+a {
+    background-color: transparent;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.app-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 78px;
+    background-color: white;
+    text-align: center;
+    display: block;
+    z-index: 20;
+}
+
+.nav {
+    position: fixed;
+    width: 90%;
+}
+
+.link-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 88px;
+    height: 78px;
+    line-height: 78px;
+    /* color: #f0db4f; */
+    color: rgb(77, 64, 64);
+}
+
+.link.active, .link:hover {
+    color: #39609b;
+}
+
+
+.link.active::after, .link:hover:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #39609b;
+}
+
+
+.brand-footer {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.brand {
+    align-self: center;
+    position: absolute;
+    text-align: center;
+}
+
+.brand h2 {
+    margin: 0px;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    color: white;
+    border: solid white 5px;
+}

@@ -15,7 +15,7 @@ module.exports = {
     resolve: {
         modules: [__dirname, 'src', 'node_modules'],
         extensions: ['*', '.js', '.jsx', '.tsx', '.ts'],
-      },
+    },
     module: {
         rules: [
             {
@@ -24,8 +24,16 @@ module.exports = {
                 loader: require.resolve('babel-loader')
             },
             {
-                test:/\.css$/,
-                use:['style-loader','css-loader']
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.(png|jpe?g|gif|mp4)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                    },
+                ]
             }
         ]
     }
