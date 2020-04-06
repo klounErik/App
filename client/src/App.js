@@ -1,42 +1,31 @@
 import React from "react";
-// import React, { useState } from 'react'
-// import { Button } from 'antd'
-// import { User } from './components/User'
-// import { UserModal } from './components/UserModal'
 import video from './assets/videos/video2.mp4'
-
+import {
+    Route,
+    Link,
+} from 'react-router-dom'
 import { FaLaptopCode } from "react-icons/fa";
+import About from "./components/About";
+import Work from './components/Work'
 
 import './App.css'
 
 export default function App() {
-
-    // const [userChange, setUserChange] = useState(false)
-    // const [userModal, setUserModal] = useState(false)
-
-    // const UserChanged = () => {
-    //     setUserChange(!userChange)
-    // }
-
-    // const handleClick = () => {
-    //     setUserModal(!userModal)
-    // }
-
     return (
         <div className="app">
             <nav className="app-nav">
                 <div className="nav">
                     <FaLaptopCode />
                     <ul className="link-container">
-                        <a>
+                        <Link to="/" >
                             <li className="link">Home</li>
-                        </a>
-                        <a>
+                        </Link>
+                        <Link to="/about">
                             <li className="link">About</li>
-                        </a>
-                        <a>
+                        </Link>
+                        <Link to="/work">
                             <li className="link">Work</li>
-                        </a>
+                        </Link>
                     </ul>
                 </div>
             </nav>
@@ -52,17 +41,13 @@ export default function App() {
                 </div>
             </div>
             <div className="app-content">
-                <section className="section-one">
-
-                </section>
+                    <Route exact path="/about">
+                        <About />
+                    </Route>
+                    <Route exact path="/work">
+                        <Work />
+                    </Route>
             </div>
-            {/* <Button type="primary" onClick={handleClick}>
-                Create user
-            </Button>
-            <UserModal handleClick={handleClick} UserChanged={UserChanged} open={userModal} />
-            <div className="users">
-                <User userChange={userChange} UserChanged={UserChanged} />
-            </div> */}
         </div>
     )
 

@@ -129,7 +129,7 @@ a:-webkit-any-link {
     left: 0;
     right: 0;
     height: 78px;
-    background-color: white;
+    background-color: rgba(255, 254, 254, 0.6);
     text-align: center;
     
     z-index: 20;
